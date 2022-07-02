@@ -1,0 +1,23 @@
+Requirements and useful info:
+- you have 2 build 2 pages: the main one and the overlay one containing the individual page presentation
+- both pages will work on the entire width of the viewport, vertical scrolling is totally ok
+- add data in products.js for the missing ones: lamps, glasses, accessories as per Vases example. Note that the images should have the same ratio, or processing in CSS will be needed. Either solution is fine, just consider that CSS processing might need to consider individual images and implementation becomes singular and not re-usable
+- the products on the first page will be dynamically added from the products.js file that you can find in the resource folder (products.js) on CLICK on the specific main product type: vases, lamps, glasses, accessories (by default Vases should be displayed at first user access and the Vases menu item should be selected)
+- implement click event handle on types menu (vases, lamps, glasses, accessories): specific product should be displayed and specific menu item should be selected
+- clicking on one of the products the overlay page will turn visible, part of the displayed data will need to be retrieved from the products object. 
+- the overlay page will be closed ONLY by clicking on the X icon
+- in the product modal increase/decrease quantity should be implemented
+
+Tip: consider passing an data-id from the main page to the overlay page in order to be able to get data from the main products object based on the relative unique id
+- imgURL will need to be "built", concatenation is in order
+
+Does NOT require implementation for this assignment:
+- categories events
+- add to cart event in the modal
+
+Useful colors:
+- dark blue: #153774
+- medium blue: #0abfdc
+- light blue: #a9ecfa
+- red: #d32c57
+- light pink (Categories section): #fef1ef

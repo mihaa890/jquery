@@ -100,6 +100,11 @@ nav ul li a:hover{
     border-radius: 15px;
     color: #fff;
 }
+nav ul li a.selected{
+    background-color: #a9ecfa;
+    border-radius: 15px;
+    color: #fff;
+}
 section{
     display: flex;
     flex-direction: row;
@@ -110,7 +115,7 @@ section .cards-wrapper {
     flex-direction: row;
     gap:2rem;
     width: 100%;
-    padding:0rem 10rem;
+    padding:0rem 5rem;
 }
 section .cards-wrapper .card-wrapper{
     display: flex;
@@ -119,36 +124,37 @@ section .cards-wrapper .card-wrapper{
 section .cards-wrapper .card-wrapper .img-wrapper{
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 100%;
 }
 section .cards-wrapper .card-wrapper .product-description-wrapper{
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 100%;
     justify-content: space-between;
+    margin-top:1.2rem;
 }
 section .cards-wrapper .card-wrapper .description-wrapper{
     color:  #153774;
-    font-size:12px;
+    font-size:16px;
     font-weight: 500;
 }
 section .cards-wrapper .card-wrapper .price-wrapper{
     color:#d32c57;
-    font-size:14px;
+    font-size:20px;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 section .category-wrapper{
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: center;
-    margin-bottom: 3rem;
+    
 }
 .category-section{
     display: flex;
     flex-direction: column;
-    padding:0rem 10rem;
+    padding:0rem 5rem;
 }
 section h1{
     color: #153774;
@@ -157,8 +163,9 @@ section h1{
 section .category-wrapper .cards{
     display: flex;
     flex-direction: row;
-    width: 80%;
-    justify-content: space-between;
+    width: 100%;
+    gap:1rem;
+    flex-wrap: wrap;
 }
 section .category-wrapper .cards .card {
     display: flex;
@@ -170,6 +177,8 @@ section .category-wrapper .cards .card {
     align-items: center;
     color:#153774;
     font-weight: 500;
+    flex:1 1;
+    text-align: center;
 }
 .popup-overlay {
     visibility: hidden;
@@ -201,6 +210,9 @@ section .category-wrapper .cards .card {
     background-color: transparent;
     border: none;
     outline: none;
+  }
+  .popup-content.active .close img{
+    outline: 1px solid red;
   }
   
   .popup-content {
@@ -315,6 +327,10 @@ section .category-wrapper .cards .card {
     font-size:30px;
     font-weight: 400;
   } 
+  .popup-content.active .cart-wrapper div:nth-child(1) span img{
+    width : 40px;
+    height: 40px;
+  }
   .popup-content.active .cart-wrapper .cart-button{
     display: flex;
     flex-direction: row;

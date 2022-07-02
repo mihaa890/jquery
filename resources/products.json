@@ -1,4 +1,5 @@
 {
+  "products": {
     "vases": [
       {
         "id": 1,
@@ -57,7 +58,179 @@
         "unit": "cm"
       }
     ],
-    "lamps": [],
-    "glasses": [],
-    "accessories": []
+    "lamps": [
+      {
+        "id": 1,
+        "series": "Abstract Lamp",
+        "currency": "$",
+        "price": 300,
+        "imgUrl": "1.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "designer": "Letifly",
+        "sku": 3554544,
+        "colour": "white",
+        "material": "plastic",
+        "height": 30,
+        "unit": "cm"
+      },
+      {
+        "id": 2,
+        "series": "Twist",
+        "currency": "$",
+        "price": 200,
+        "imgUrl": "2.png",
+        "description": "Lorem ipsum dolor sit.",
+        "designer": "Sight Unseen",
+        "sku": 23223232,
+        "colour": "black",
+        "material": "plastic",
+        "height": 22,
+        "unit": "cm"
+      },
+      {
+        "id": 3,
+        "series": "Simple Lamp",
+        "currency": "$",
+        "price": 115,
+        "imgUrl": "3.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "designer": "Letifly",
+        "sku": 2229888775,
+        "colour": "red",
+        "material": "ceramic",
+        "height": 40,
+        "unit": "cm"
+      },
+      {
+        "id": 4,
+        "series": "Vintage Lamp",
+        "currency": "$",
+        "price": 300,
+        "imgUrl": "4.png",
+        "description": "Bring peace and balance with your lamp. The simple, modern design of this lamp is sure to make a statement in your home.",
+        "designer": "Letifly",
+        "sku": 232456,
+        "colour": "black",
+        "material": "plastic",
+        "height": 40,
+        "unit": "cm"
+      }
+    ],
+    "glasses": [
+      {
+        "id": 1,
+        "series": "Cocktail Glass",
+        "currency": "$",
+        "price": 25,
+        "imgUrl": "1.png",
+        "description": "Combine vodka with peach schnapps and cranberry juice to make a classic sex on the beach cocktail and drink it with this perfect glass.",
+        "designer": "Letifly",
+        "sku": 555577,
+        "colour": "transparent",
+        "material": "glass",
+        "height": 15,
+        "unit": "cm"
+      },
+      {
+        "id": 2,
+        "series": "Wine Glass",
+        "currency": "$",
+        "price": 25,
+        "imgUrl": "2.png",
+        "description": "Drink the best wine with the best glass.",
+        "designer": "Sight Unseen",
+        "sku": 434343,
+        "colour": "red",
+        "material": "glass",
+        "height": 22,
+        "unit": "cm"
+      },
+      {
+        "id": 3,
+        "series": "Water Glass",
+        "currency": "$",
+        "price": 10,
+        "imgUrl": "3.png",
+        "description": "Simple and easy to drink water from this glass.",
+        "designer": "Jonas",
+        "sku": 434343,
+        "colour": "red",
+        "material": "glass",
+        "height": 40,
+        "unit": "cm"
+      },
+      {
+        "id": 4,
+        "series": "Regal Glass",
+        "currency": "$",
+        "price": 300,
+        "imgUrl": "4.png",
+        "description": "Bring peace and balance with your own glass.",
+        "designer": "Jonas",
+        "sku": 43436,
+        "colour": "light blue",
+        "material": "glass",
+        "height": 30,
+        "unit": "cm"
+      }
+    ],
+    "accessories": [
+      {
+        "id": 1,
+        "series": "Kitchen Set",
+        "currency": "$",
+        "price": 100,
+        "imgUrl": "1.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "designer": "Letifly",
+        "sku": 222775,
+        "colour": "brown, black",
+        "material": "plastic",
+        "height": 30,
+        "unit": "cm"
+      },
+      {
+        "id": 2,
+        "series": "Table Set",
+        "currency": "$",
+        "price": 20,
+        "imgUrl": "2.png",
+        "description": "Table set for your kitchen.",
+        "designer": "Sight Unseen",
+        "sku": 222775,
+        "colour": "black, brown",
+        "material": "plastic",
+        "height": 30,
+        "unit": "cm"
+      },
+      {
+        "id": 3,
+        "series": "Coffee Set",
+        "currency": "$",
+        "price": 200,
+        "imgUrl": "3.png",
+        "description": "Simple and easy for your kitchen.",
+        "designer": "Jonas",
+        "sku": 2323232,
+        "colour": "brown",
+        "material": "plastic",
+        "height": 23,
+        "unit": "cm"
+      },
+      {
+        "id": 4,
+        "series": "Complete Set",
+        "currency": "$",
+        "price": 300,
+        "imgUrl": "4.png",
+        "description": "Bring peace and balance with your own set.",
+        "designer": "Jonas",
+        "sku": 54545,
+        "colour": "brown",
+        "material": "plastic",
+        "height": 55,
+        "unit": "cm"
+      }
+    ]
   }
+}
