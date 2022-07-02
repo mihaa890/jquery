@@ -103,18 +103,34 @@ const openModal = (data, productType) => {
   </div>
     <div class="cart-wrapper">
     <div>
-      <span><img src="assets/minus.png"> </span>
+      <span><img class="minus" data-value="-1" src="assets/minus.png"> </span>
       <span>1</span>
-      <span><img src="assets/plus.png"> </span>
+      <span><img class="plus" data-value="1" src="assets/plus.png"> </span>
   </div>
       <button class="cart-button">Add to cart</button>
   </div>
       </div>`;
       $(".right-section").append(content);
     }
+    increaseDecreaseQuantity();
   });
   $(".close").on("click", function (e) {
     e.stopPropagation();
     $(".popup-overlay, .popup-content").removeClass("active");
   });
 }
+
+
+const increaseDecreaseQuantity = () => {
+  $(".minus, .plus").on("click", function () {
+    const quantityNode = $(".cart-wrapper span:nth-child(2)");
+    let quantity = parseInt(quantityNode.text());
+    console.log(quantity);
+    quantity += parseInt(this.dataset.value);
+    $(".cart-wrapper span:nth-child(2)").text(quantity);
+  }
+  );
+
+}
+
+
