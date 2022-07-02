@@ -125,9 +125,10 @@ const increaseDecreaseQuantity = () => {
   $(".minus, .plus").on("click", function () {
     const quantityNode = $(".cart-wrapper span:nth-child(2)");
     let quantity = parseInt(quantityNode.text());
-    console.log(quantity);
-    quantity += parseInt(this.dataset.value);
-    $(".cart-wrapper span:nth-child(2)").text(quantity);
+    const nextValue = quantity += parseInt(this.dataset.value);
+    if(nextValue > 0) { 
+      $(".cart-wrapper span:nth-child(2)").text(nextValue);
+    }
   }
   );
 
