@@ -9,7 +9,9 @@ $(function () {
     populateCategoryItems(DEFAULT_CATEGORY_SELECTED, categories, entries);
     openModal(categories, DEFAULT_CATEGORY_SELECTED);
 
-    $("a").click(function () {
+    $("a").click(function (e) {
+      // daca adaugi preventDefault nu isi va mai da refresh la pagina la fiecare click care e comportamentul default al browser-ului pe link-uri
+      e.preventDefault();
       const productType = this.dataset.type;
       entries.html('')
       populateCategoryItems(productType, categories, entries);
@@ -49,6 +51,7 @@ const openModal = (data, productType) => {
     $(".left-section").append(`<img src="assets/${productType}/${data.imgUrl}" + "' class='left-img-wrapper'>`);
     $(".right-section").html('');
     if (data) {
+      // toata aceasta parte putea fi extrasa in markup, este continut static, iar apoi doar sa selectezi unde doresti sa adaugi continutul dinamic pe fiecare produs in parte
       let content =
         `<div class="product-description-wrapper">
       <h1 class="description-wrapper">
